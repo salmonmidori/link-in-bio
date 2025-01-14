@@ -3,31 +3,66 @@
   <head>
     <title>My link-in-bio</title>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet">
     <style>
       * {
        border: 1px red solid;
       }
-
+      html {
+       min-height: 100%;
+      }
       body {
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: radial-gradient(circle at 50% 50%, #ffe799, #ffd38c, #ffbe81, #ffa878, #ff8b70, #ff767b, #ff6b95, #ff61b5); /* Tool: https://www.learnui.design/tools/gradient-generator.html */
+        color: rgb(255, 255, 255);
       }
-
+      a {
+        color: rgb(255, 255, 255);
+      }
+      .main-container {
+       max-width: 640px;
+       margin: auto;
+      }
       .avatar-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
-        border: #4169E1 10px groove;
+        border: #ca3232 10px groove;
+      }
+      .item {
+        background-color: rgba(230, 68, 39, 0.555);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center; 
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
       }
 
-    .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
-      object-fit: cover;
-    }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
     </style>
   </head>
 
@@ -47,52 +82,38 @@
       </div>
       <div class="links-row">
         <div class="item">
-          <img class="thumbnail" src="thumbnails/google_building.jpg" alt="Google logo on building">
-          <a href="https://www.bateswhite.com/work-Bates-White-supports-expert-on-behalf-of-DOJ-in-second-US-v-Google-antitrust-case.html" target="_blank">Senior Consultant on Google ad tech case</a>  
-        </div>
-        <div class="item">          
-          <img class="thumbnail" src="thumbnails/jetblue_plane.jpg" alt="JetBlue plane">
-          <a href="https://www.bateswhite.com/work-Bates-White-expert-retained-on-behalf-of-JetBlue-in-proposed-airline-merger.html" target="_blank">Consultant on JetBlue-Spirit case</a> 
+          <img class="thumbnail" src="thumbnails/google_building.jpg" alt="Google logo on building"> <!-- Source: https://unsplash.com/ -->
+          <a class="link-text" href="https://www.bateswhite.com/work-Bates-White-supports-expert-on-behalf-of-DOJ-in-second-US-v-Google-antitrust-case.html" target="_blank">2023-2024: Senior Consultant on Google ad tech case</a>  
         </div>
         <div class="item">
           <img class="thumbnail" src="thumbnails/black_history_trivia.png" alt="Black History Month event hosted by D-I Council">
-          <a href="https://www.bateswhite.com/about-deib-dicouncil.html" target="_blank">Chair of Diversity-Inclusion Council</a>  
+          <a class="link-text" href="https://www.bateswhite.com/about-deib-dicouncil.html" target="_blank">2023-2024: Chair of Diversity-Inclusion Council</a>  
+        </div>
+        <div class="item">          
+          <img class="thumbnail" src="thumbnails/jetblue_plane.jpg" alt="JetBlue plane">
+          <a class="link-text" href="https://www.bateswhite.com/work-Bates-White-expert-retained-on-behalf-of-JetBlue-in-proposed-airline-merger.html" target="_blank">2023: Consultant on JetBlue-Spirit case</a> 
         </div>
         <div class="item">
           <img class="thumbnail" src="thumbnails/classroom.jpg" alt="Classroom stock photo">
-          <a href="https://www.federalreserve.gov/aboutthefed/educational-tools/fed-education.htm" target="_blank">Leader of Federal Reserve Education Outreach</a>  
+          <a class="link-text" href="https://www.federalreserve.gov/aboutthefed/educational-tools/fed-education.htm" target="_blank">2021-2022: Leader of Federal Reserve Education Outreach</a>  
         </div>
         <div class="item">
           <img class="thumbnail" src="thumbnails/data_on_computer.jpg" alt="Computer stock photo">
-          <a href="https://home.treasury.gov/data/treasury-international-capital-tic-system" target="_blank">Producer of Treasury International Capital Data</a>  
+          <a class="link-text" href="https://home.treasury.gov/data/treasury-international-capital-tic-system" target="_blank">2020-2022: Producer of Treasury International Capital Data</a>  
         </div>
         <div class="item">
           <img class="thumbnail" src="thumbnails/books.jpg" alt="Books stock photo">
-          <a href="https://economics.rutgers.edu/academics/undergraduate/undergraduate-awards/237-previous-years/1048-henry-rutgers-scholar-awards-for-previous-years" target="_blank">Henry Rutgers Scholar</a>  
+          <a class="link-text" href="https://economics.rutgers.edu/academics/undergraduate/undergraduate-awards/237-previous-years/1048-henry-rutgers-scholar-awards-for-previous-years" target="_blank">2020: Henry Rutgers Scholar</a>  
         </div>
         <div class="item">
           <img class="thumbnail" src="thumbnails/me_graduation.jpg" alt="Me at graduation">
-          <a href="https://honorscollege.rutgers.edu/about/about-us" target="_blank">Rutgers Honors College Class of 2020</a>  
+          <a class="link-text" href="https://honorscollege.rutgers.edu/about/about-us" target="_blank">2016-2020: Rutgers Honors College Scholar</a>  
+        </div>
+        <div class="item">
+          <img class="thumbnail" src="thumbnails/me_japan.jpg" alt="Me in kimono">
+          <a class="link-text" href="https://open.spotify.com/playlist/3ZLmEfpBr9UcHUsac5HstT?si=6740aa4d205e4c70" target="_blank">Bonus: Amy music</a> 
         </div>
       </div> <!-- / links-row -->
     </div> <!-- / main-container -->
-      <!--
-      
-      Profile picture
-       
-       The URLs of your social media profiles. I used my GitHub, LinkedIn, Instagram, and Twitter profiles.
-
-A list of URLs that you want to share. I used a handful of essays and short stories that I find myself sharing with people often. Here are some examples that you can peruse for inspiration.
-
-A thumbnail image for each link. I used a few strategies to find an image for each of my links:
-
-Searched Unsplash for a relevant image.
-
-Generated an image with AI. Dezgo is an option that doesn’t require an account. ChatGPT and Gemini require that you sign up for an account.
-
-
-A website might have a specific image that it wants you to use when sharing it. If so, it will have a <meta> tag with the attribute property="og:image" within its <head>.
-
-You could View Source on the page to try and find such a meta tag yourself; or you can use the OpenGraph tool, which extracts the relevant meta tag if it’s there. -->
   </body>
 </html>
