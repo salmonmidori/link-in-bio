@@ -17,51 +17,61 @@
       .avatar-image {
         width: 128px;
         height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+        border: #4169E1 10px groove;
       }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
     </style>
   </head>
 
 
   <body>
-    <div class = "main-container">
-      <div class = "image-row">
-        <img class = "avatar-image" src="thumbnails/me_professional.jpg" alt="My professional headshot"> 
+    <div class="main-container">
+      <div class="image-row">
+        <img class="avatar-image" src="thumbnails/me_professional.jpg" alt="My professional headshot"> 
       </div>
-      <div class = "name-row">
+      <div class="name-row">
         Amy May Nguyen
       </div>
-      <div class = "social-icons-row">
+      <div class="social-icons-row">
         <a href="https://github.com/salmonmidori" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/amymnguyen101" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/bluemidori" target="_blank">Instagram</a>
       </div>
-      <div class = "links-row">
+      <div class="links-row">
         <div class="item">
-          <img src="thumbnails/google_building.jpg" alt="Google logo on building">
+          <img class="thumbnail" src="thumbnails/google_building.jpg" alt="Google logo on building">
           <a href="https://www.bateswhite.com/work-Bates-White-supports-expert-on-behalf-of-DOJ-in-second-US-v-Google-antitrust-case.html" target="_blank">Senior Consultant on Google ad tech case</a>  
         </div>
         <div class="item">          
-          <img src="thumbnails/jetblue_plane.jpg" alt="JetBlue plane">
+          <img class="thumbnail" src="thumbnails/jetblue_plane.jpg" alt="JetBlue plane">
           <a href="https://www.bateswhite.com/work-Bates-White-expert-retained-on-behalf-of-JetBlue-in-proposed-airline-merger.html" target="_blank">Consultant on JetBlue-Spirit case</a> 
         </div>
         <div class="item">
-          <img src="thumbnails/black_history_trivia.png" alt="Black History Month event hosted by D-I Council">
+          <img class="thumbnail" src="thumbnails/black_history_trivia.png" alt="Black History Month event hosted by D-I Council">
           <a href="https://www.bateswhite.com/about-deib-dicouncil.html" target="_blank">Chair of Diversity-Inclusion Council</a>  
         </div>
         <div class="item">
-          <img src="thumbnails/classroom.jpg" alt="Classroom stock photo">
+          <img class="thumbnail" src="thumbnails/classroom.jpg" alt="Classroom stock photo">
           <a href="https://www.federalreserve.gov/aboutthefed/educational-tools/fed-education.htm" target="_blank">Leader of Federal Reserve Education Outreach</a>  
         </div>
         <div class="item">
-          <img src="thumbnails/data_on_computer.jpg" alt="Computer stock photo">
+          <img class="thumbnail" src="thumbnails/data_on_computer.jpg" alt="Computer stock photo">
           <a href="https://home.treasury.gov/data/treasury-international-capital-tic-system" target="_blank">Producer of Treasury International Capital Data</a>  
         </div>
         <div class="item">
-          <img src="thumbnails/books.jpg" alt="Books stock photo">
+          <img class="thumbnail" src="thumbnails/books.jpg" alt="Books stock photo">
           <a href="https://economics.rutgers.edu/academics/undergraduate/undergraduate-awards/237-previous-years/1048-henry-rutgers-scholar-awards-for-previous-years" target="_blank">Henry Rutgers Scholar</a>  
         </div>
         <div class="item">
-          <img src="thumbnails/me_graduation.jpg" alt="Me at graduation">
+          <img class="thumbnail" src="thumbnails/me_graduation.jpg" alt="Me at graduation">
           <a href="https://honorscollege.rutgers.edu/about/about-us" target="_blank">Rutgers Honors College Class of 2020</a>  
         </div>
       </div> <!-- / links-row -->
